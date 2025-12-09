@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Project Path="BuildingBlocks.Contracts/BuildingBlocks.Contracts.csproj" Id="61054ee1-873d-4974-8b9f-5241fdbb170e" />
   <Project Path="Ecommerce.Invoice/Ecommerce.Inventory.csproj" Id="6e5eb6af-55ff-4a38-9db6-a1e3df429eec" />
   <Project Path="Ecommerce.Notification/Ecommerce.Notification.csproj" Id="3c90e592-48c4-4e68-8c12-9d5d05618f0c" />
   <Project Path="Ecommerce.Order/Ecommerce.Order.csproj" Id="51a30f68-8ee7-42ec-8f86-9b1d41755a8b" />

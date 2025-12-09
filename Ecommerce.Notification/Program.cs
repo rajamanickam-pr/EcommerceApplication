@@ -1,6 +1,25 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using Ecommerce.Notification.Consumer;
+using MassTransit;
 
-app.MapGet("/", () => "Hello World!");
+var builder = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((context, services) =>
+    {
+        services.AddMassTransit(x =>
+        {
+            x.AddConsumer<OrderEventsConsumer>();
+            x.AddConsumer<PaymentEventsConsumer>();
 
-app.Run();
+            x.UsingRabbitMq((ctx, cfg) =>
+            {
+                cfg.Host("localhost", "/", h =>
+                {
+                    h.Username("guest");
+                    h.Password("guest");
+                });
+
+                cfg.ConfigureEndpoints(ctx);
+            });
+        });
+    });
+
+await builder.RunConsoleAsync();
