@@ -1,3 +1,6 @@
 <Solution>
-  <Project Path="Ecommerce.Order/Ecommerce.Order.csproj" />
+  <Project Path="Ecommerce.Invoice/Ecommerce.Inventory.csproj" Id="6e5eb6af-55ff-4a38-9db6-a1e3df429eec" />
+  <Project Path="Ecommerce.Notification/Ecommerce.Notification.csproj" Id="3c90e592-48c4-4e68-8c12-9d5d05618f0c" />
+  <Project Path="Ecommerce.Order/Ecommerce.Order.csproj" Id="51a30f68-8ee7-42ec-8f86-9b1d41755a8b" />
+  <Project Path="Ecommere.Payment/Ecommere.Payment.csproj" Id="d6ec6b12-4418-41ae-93d6-16f4bc2c9b6c" />
 </Solution>
